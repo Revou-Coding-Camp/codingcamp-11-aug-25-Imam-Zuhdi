@@ -1,39 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Zuhdi</title>
 
-    <!-- CSS External -->
-    <link rel="stylesheet" href="css/style.css">
-
     <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="scroll-smooth"> 
+    <!-- Main Header -->
 
-    <!-- Main Headeer -->
-    <header>
+    <header style="background-image:url(https://static.vecteezy.com/system/resources/thumbnails/046/838/017/small/high-resolution-texture-of-polished-amber-crystal-surface-for-background-use-in-design-and-art-projects-photo.jpg);" class="relative flex items-center justify-between p-[16px] shadow-2xl">
+        
+        <div class="absolute inset-0 bg-white/20"></div> 
 
+        <div class="flex flex-col relative z-10">
+            <div class="flex items-center">
+                <img src="https://th.bing.com/th/id/OIG4.OMxu7Yq7_EzABFIObjzq?r=0&w=1024&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3" alt="logo" class="rounded-full outline outline-[4px] outline-[#410200] flex items-center h-[75px] w-[75px]">
+
+                <p class="pl-3 text-3xl font-bold text-[#410200]">LuxaS</p>
+                <p class="mt-0 ml-[9px] text-xl text-[#410200]">Indonesia's biggest luxury cars showroom</p>
+            </div>
+        </div>
+        
+        <nav class="relative z-10 bg-white/80 shadow-lg rounded-lg px-4 py-2">
+            <ul class="flex gap-4">
+                <li>
+                    <a href="#home"
+                       class="text-[#410200] font-semibold px-4 py-2 rounded-lg transition-all duration-200 hover:bg-yellow-100 hover:text-yellow-700 shadow-sm active:scale-95">
+                       Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#our-profile"
+                       class="text-[#410200] font-semibold px-4 py-2 rounded-lg transition-all duration-200 hover:bg-yellow-100 hover:text-yellow-700 shadow-sm active:scale-95">
+                       Our Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#brand-list"
+                       class="text-[#410200] font-semibold px-4 py-2 rounded-lg transition-all duration-200 hover:bg-yellow-100 hover:text-yellow-700 shadow-sm active:scale-95">
+                       Brand List
+                    </a>
+                </li>
+                <li>
+                    <a href="#message-us"
+                       class="text-[#410200] font-semibold px-4 py-2 rounded-lg transition-all duration-200 hover:bg-yellow-100 hover:text-yellow-700 shadow-sm active:scale-95">
+                       Message Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <!-- main content -->
+
     <main>
 
+<!-- home -->
+<section id="home" class="min-h-screen bg-gray-500 relative overflow-hidden">
+        <!-- Background image -->
+        <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i_Mj8oTh0Erk/v0/-1x-1.webp"
+             alt="luxury car"
+             class="absolute inset-0 w-full h-full object-cover opacity-70 z-0" />
+       
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/10 z-0"></div>
+        
+        <div class="relative z-10 flex flex-col items-center justify-center h-full">
+            <h1 class="text-5xl font-extrabold text-white drop-shadow-lg tracking-wide mb-4">
+                Welcome <span id="user-greeting" class="text-yellow-300">User</span> to LuxaS
+            </h1>
+            <p class="text-xl text-white/90 bg-black/40 rounded-xl px-6 py-3 shadow-md backdrop-blur-sm">
+                Your paradise destination for luxury car selection.
+            </p>
+        </div>
+</section>
+    
+<!-- Our Profile -->
+<section id="our-profile" class="min-h-screen bg-gray-300 relative flex flex-col items-center justify-start">
+    <img src="https://mclaren.scene7.com/is/image/mclaren/MTC-Hero-1920x1080:crop-16x9?wid=1920&hei=1080&fmt=png-alpha&qlt=80,1&resMode=sharp2&op_usm=1.0,0.5,0,0"
+         alt="Our Profile"
+         class="absolute inset-0 w-full h-full object-cover opacity-60 z-0">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-gray-300/80 z-0"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center w-full h-full px-8 pt-2">
+        <h1 class="text-5xl font-extrabold text-white drop-shadow-lg tracking-wide mb-6 bg-black/40 rounded-xl px-6 py-3 backdrop-blur-sm">
+        Our Profile
+    </h1>
+    <p class="text-xl text-white/90 bg-black/30 rounded-xl px-8 py-6 shadow-md backdrop-blur-sm max-w-3xl">
+        LuxaS is the home for luxury cars in Indonesia, where we feature a carefully chosen lineup of high-end automobiles.<br/>
+        For us, it's all about the experience, making sure your journey to buying a car is just as remarkable as the vehicle you choose, with dedicated service every step of the way. 
+    </p>
+    <!-- Our Headquarter -->
+    <div class="mt-20 w-full flex flex-col items-center">
+        <h2 class="text-3xl font-bold text-white mb-6">Our Headquarter</h2>
+        <div class="flex flex-row items-start gap-8">
+            <div class="flex flex-col items-center">
+                <div class="rounded-full w-32 h-32 shadow-lg mb-2 bg-cover bg-center" 
+                     style="background-image: url('https://i0.wp.com/mytravelation.com/wp-content/uploads/2023/11/Jakarta.jpeg?fit=1254%2C836&ssl=1');">
+                </div>
+                <span class="text-xl font-bold text-[#410200]">Jakarta</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="rounded-full w-32 h-32 shadow-lg mb-2 bg-cover bg-center" 
+                     style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0d/c7/f8/d6/bandung-night-cityscape.jpg');">
+                </div>
+                <span class="text-xl font-bold text-[#410200]">Bandung</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="rounded-full w-32 h-32 shadow-lg mb-2 bg-cover bg-center" 
+                     style="background-image: url('https://images.tokopedia.net/blog-tokopedia-com/uploads/2018/04/Wisata-Malam-Surabaya-4-Travel-Malang.jpg');">
+                </div>
+                <span class="text-xl font-bold text-[#410200]">Surabaya</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Brand List -->
+<section id="brand-list" class="min-h-screen bg-gray-300 relative flex flex-col items-center justify-center">
+    <div class="relative z-10 flex flex-col items-center w-full h-full px-8">
+        <h1 class="text-5xl font-extrabold text-white drop-shadow-lg tracking-wide mb-6 bg-black/40 rounded-xl px-6 py-3 backdrop-blur-sm">
+            Brand List
+        </h1>
+        <img src="https://logos-world.net/wp-content/uploads/2023/03/TOP-15-Luxury-Car-Brands.png"
+             alt="Brand List"
+             class="w-full max-w-4xl rounded-xl shadow-lg opacity-90 mb-4" />
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-gray-300/80 z-0"></div>
+</section>
+    <hr/>
+
+<!-- Message Us -->
+<section id="message-us" class="min-h-screen bg-gray-100">
+    <div class="flex flex-col items-center justify-start h-full">
+        <h1 class="text-4xl font-bold text-[#410200] mt-4">Message Us</h1>
+        <form class="w-full flex flex-col items-center mt-4 relative z-10">
+            <label for="name" class="text-lg text-gray-700">Name:</label>
+            <input type="text" id="name" name="name" class="border border-gray-300 rounded-md p-2 w-1/2 mb-4">
+
+            <label for="email" class="text-lg text-gray-700">Email:</label>
+            <input type="email" id="email" name="email" class="border border-gray-300 rounded-md p-2 w-1/2 mb-4">
+
+            <label for="message" class="text-lg text-gray-700">Message:</label>
+            <textarea id="message" name="message" class="border border-gray-300 rounded-md p-2 w-1/2 mb-4"></textarea>
+
+            <button type="button" onclick="handleFormSubmit()" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Send Message</button>
+        </form>
+        <!-- Message display area -->
+        <div id="message-display" class="mt-8 w-1/2 bg-white rounded-lg shadow p-4 text-gray-800"></div>
+    </div>
+</section>
     </main>
 
-    <!-- F  ooter -->
-    <footer>
-
+<!-- Footer -->
+<footer class="text-center mt-10 p-5"> 
+        <span>&copy; 2025 Portofolio Zuhdi. All Right Reserverd.</span>
     </footer>
      
-    <!-- JS External -->
-    <script src="js/script.js">
+ <!-- JS External -->
+<script src="js/script.js">
 
-    </script>
+</script>
+<script>
+document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const duration = 1200; // milliseconds (increase for slower scroll)
+            let start = null;
 
-</head>
-<body>
-    
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                const percent = Math.min(progress / duration, 1);
+                window.scrollTo(0, startPosition + distance * percent);
+                if (progress < duration) {
+                    window.requestAnimationFrame(step);
+                }
+            }
+            window.requestAnimationFrame(step);
+        }
+    });
+});
+</script>
+
 </body>
+
 </html>
